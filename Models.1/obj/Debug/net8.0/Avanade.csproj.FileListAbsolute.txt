@@ -12,3 +12,4 @@ C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\obj\Debug\net8.0\ref
 C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\obj\Debug\net8.0\Avanade.pdb
 C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\obj\Debug\net8.0\Avanade.genruntimeconfig.cache
 C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\obj\Debug\net8.0\ref\Avanade.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\obj\Debug\net8.0\Avanade.sourcelink.json
