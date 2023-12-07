@@ -1,0 +1,15 @@
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\bin\Debug\net8.0\Models2.exe
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\bin\Debug\net8.0\Models2.deps.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\bin\Debug\net8.0\Models2.runtimeconfig.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\bin\Debug\net8.0\Models2.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\bin\Debug\net8.0\Models2.pdb
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.AssemblyInfoInputs.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.AssemblyInfo.cs
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.csproj.CoreCompileInputs.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.sourcelink.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\refint\Models2.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.pdb
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\Models2.genruntimeconfig.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\Models2\obj\Debug\net8.0\ref\Models2.dll

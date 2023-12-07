@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Avanade.csproj": {}
+    "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Models2\\Models2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Avanade.csproj": {
+    "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Models2\\Models2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Avanade.csproj",
-        "projectName": "Avanade",
-        "projectPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Avanade.csproj",
+        "projectUniqueName": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Models2\\Models2.csproj",
+        "projectName": "Models2",
+        "projectPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Models2\\Models2.csproj",
         "packagesPath": "C:\\Users\\rosan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\obj\\",
+        "outputPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Models2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rosan\\AppData\\Roaming\\NuGet\\NuGet.Config"
