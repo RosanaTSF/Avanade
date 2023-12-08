@@ -1,0 +1,15 @@
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\bin\Debug\net8.0\CPoo.exe
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\bin\Debug\net8.0\CPoo.deps.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\bin\Debug\net8.0\CPoo.runtimeconfig.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\bin\Debug\net8.0\CPoo.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\bin\Debug\net8.0\CPoo.pdb
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.AssemblyInfoInputs.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.AssemblyInfo.cs
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.csproj.CoreCompileInputs.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.sourcelink.json
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\refint\CPoo.dll
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.pdb
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\CPoo.genruntimeconfig.cache
+C:\Users\rosan\OneDrive\Área de Trabalho\Developer\Avanade\CPoo\obj\Debug\net8.0\ref\CPoo.dll
