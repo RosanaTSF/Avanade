@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\ParkingProject\\ParkingProject.csproj",
+      "projectUniqueName": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Projects\\Parking\\ParkingProject.csproj",
       "projectName": "ParkingProject",
-      "projectPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\ParkingProject\\ParkingProject.csproj",
+      "projectPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Projects\\Parking\\ParkingProject.csproj",
       "packagesPath": "C:\\Users\\rosan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\ParkingProject\\obj\\",
+      "outputPath": "C:\\Users\\rosan\\OneDrive\\Área de Trabalho\\Developer\\Avanade\\Projects\\Parking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rosan\\AppData\\Roaming\\NuGet\\NuGet.Config"
