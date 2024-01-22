@@ -8,23 +8,23 @@ namespace Avanade.ParkingProject.Model
     {
         private decimal initialPrice = 0;
         private decimal pricePerHour = 0;
-        private List<string> vehicles = new List<string>(); //Declaração e inicialização de uma lista privada de strings vehicles para armazenar as placas dos veículos no estacionamento.
+        private List<string> vehicles = new List<string>(); //Encapsulamento.
 
-        public Parking(decimal initialPrice, decimal pricePerHour) // Construtor da classe Parking que recebe o preço inicial e o preço por hora como parâmetros e inicializa as variáveis.
+        public Parking(decimal initialPrice, decimal pricePerHour) // Construtor.
         {
             this.initialPrice = initialPrice;
             this.pricePerHour = pricePerHour;
         }
 
-        public void AddVehicle() // Método que solicita ao usuário a entrada da placa do veículo, verifica se a entrada é válida e adiciona a placa à lista de veículos.
+        public void AddVehicle() 
         {
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string userInput = Console.ReadLine();
 
-            if (!string.IsNullOrEmpty(userInput))
+            if (!string.IsNullOrEmpty(userInput)) //Trata o código para que não aceite placa vazia ou nula.
             {
                 vehicles.Add(userInput);
-                Console.WriteLine("Veículo estacionado com sucesso.");
+                Console.WriteLine("Veículo estacionado com sucesso."); //Iteração com o usuário.
             }
             else
             {
@@ -32,7 +32,7 @@ namespace Avanade.ParkingProject.Model
             }
         }
 
-        public void RemoveVehicle(string plate) // Método que remove um veículo da lista, calcula o valor total com base no tempo estacionado e exibe informações sobre a remoção.
+        public void RemoveVehicle(string plate) 
         {
             if (vehicles != null && !string.IsNullOrEmpty(plate))
             {
@@ -42,15 +42,15 @@ namespace Avanade.ParkingProject.Model
                     vehicles.Remove(plate);
 
                     Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
-                    if (int.TryParse(Console.ReadLine(), out int hours))
+                    if (int.TryParse(Console.ReadLine(), out int hours))  //Se TryParse for bem-sucedido, o valor convertido é atribuído à variável hours, e o bloco dentro do if é executado. Se a conversão falhar, o bloco else é executado, permitindo que o programa trate a situação de entrada inválida sem lançar uma exceção.
                     {
                         decimal amount = initialPrice + (pricePerHour * hours);
-                        Console.WriteLine($"O valor total é {amount}"); // Calcula o valor total com base no preço inicial e no preço por hora multiplicado pelo número de horas.
+                        Console.WriteLine($"O valor total é {amount}"); 
 
                         Console.WriteLine("Digite a placa que deseja remover:");
                         string plateToRemove = Console.ReadLine();
 
-                        if (vehicles.Contains(plateToRemove)) // Verifica se a placa a ser removida está na lista de veículos.
+                        if (vehicles.Contains(plateToRemove))
                         {
                             Console.WriteLine($"O veículo {plateToRemove} foi removido e o preço total foi de: R$ {amount}");
                         }
