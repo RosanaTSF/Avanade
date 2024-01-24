@@ -8,7 +8,7 @@ namespace Avanade.ParkingProject.Model
     {
         private decimal initialPrice = 0;
         private decimal pricePerHour = 0;
-        private List<string> vehicles = new List<string>(); //Encapsulamento.
+        private List<string> vehicles = new List<string>(); // Encapsulamento.
 
         public Parking(decimal initialPrice, decimal pricePerHour) // Construtor.
         {
@@ -16,15 +16,15 @@ namespace Avanade.ParkingProject.Model
             this.pricePerHour = pricePerHour;
         }
 
-        public void AddVehicle() 
+        public void AddVehicle()
         {
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string userInput = Console.ReadLine();
 
-            if (!string.IsNullOrEmpty(userInput)) //Trata o código para que não aceite placa vazia ou nula.
+            if (!string.IsNullOrEmpty(userInput)) // Trata o código para que não aceite placa vazia ou nula.
             {
                 vehicles.Add(userInput);
-                Console.WriteLine("Veículo estacionado com sucesso."); //Iteração com o usuário.
+                Console.WriteLine("Veículo estacionado com sucesso."); 
             }
             else
             {
@@ -32,36 +32,42 @@ namespace Avanade.ParkingProject.Model
             }
         }
 
-        public void RemoveVehicle(string plate) 
+        public void RemoveVehicle(string plate)
         {
             if (vehicles != null && !string.IsNullOrEmpty(plate))
             {
-                if (vehicles.Contains(plate)) // Verifica se a entrada do usuário pode ser convertida para um número inteiro e a armazena na variável hours.
+                if (vehicles.Contains(plate))
                 {
                     Console.WriteLine($"Veículo de placa {plate} removido com sucesso.");
                     vehicles.Remove(plate);
 
-                    Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
-                    if (int.TryParse(Console.ReadLine(), out int hours))  //Se TryParse for bem-sucedido, o valor convertido é atribuído à variável hours, e o bloco dentro do if é executado. Se a conversão falhar, o bloco else é executado, permitindo que o programa trate a situação de entrada inválida sem lançar uma exceção.
+                    decimal totalAmount = 0;
+
+                    try // Acrescentando try catch.
                     {
-                        decimal amount = initialPrice + (pricePerHour * hours);
-                        Console.WriteLine($"O valor total é {amount}"); 
+                        Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
+                        int parkingDurationHours = Convert.ToInt32(Console.ReadLine()); // Hours foi renomeada para parkingDurationsHours.
+                        totalAmount = initialPrice + (pricePerHour * parkingDurationHours);
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Entrada incorreta para horas. Digite um número válido.");
+                        return; // Retorna para evitar a execução adicional em caso de erro na entrada do usuário.
+                    }
 
-                        Console.WriteLine("Digite a placa que deseja remover:");
-                        string plateToRemove = Console.ReadLine();
+                    Console.WriteLine($"O valor total é {totalAmount}");
 
-                        if (vehicles.Contains(plateToRemove))
-                        {
-                            Console.WriteLine($"O veículo {plateToRemove} foi removido e o preço total foi de: R$ {amount}");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
-                        }
+                    // Solicita a placa do veículo a ser removido após calcular o valor total.
+                    Console.WriteLine("Digite a placa que deseja remover:");
+                    string plateToRemove = Console.ReadLine();
+
+                    if (vehicles.Contains(plateToRemove))
+                    {
+                        Console.WriteLine($"O veículo {plateToRemove} foi removido e o preço total foi de: R$ {totalAmount}");
                     }
                     else
                     {
-                        Console.WriteLine("Entrada incorreta para horas. Digite um número válido.");
+                        Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
                     }
                 }
                 else
