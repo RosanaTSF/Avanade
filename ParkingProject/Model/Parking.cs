@@ -16,7 +16,7 @@ namespace Avanade.ParkingProject.Model
             this.pricePerHour = pricePerHour;
         }
 
-        public void AddVehicle()
+        public string AddVehicle()
         {
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string userInput = Console.ReadLine();
@@ -24,49 +24,49 @@ namespace Avanade.ParkingProject.Model
             if (!string.IsNullOrEmpty(userInput))
             {
                 vehicles.Add(userInput);
-                Console.WriteLine("Veículo estacionado com sucesso.");
+                return "Veículo estacionado com sucesso.";
             }
             else
             {
-                Console.WriteLine("Placa inválida. A placa não pode ser nula ou vazia");
+                return "Placa inválida. A placa não pode ser nula ou vazia";
             }
         }
 
         public void RemoveVehicle(string plate)
-{
-    if (vehicles.Contains(plate))
-    {
-        int parkingDurationHours;
-
-        while (true)
         {
-            Console.WriteLine("Digite a quantidade de horas que permaneceu estacionado:");
+            if (vehicles.Contains(plate))
+            {
+                int parkingDurationHours;
 
-            try
-            {
-                parkingDurationHours = Convert.ToInt32(Console.ReadLine());
-                break;
+                while (true)
+                {
+                    Console.WriteLine("Digite quantas horas permaneceu estacionado:");
+
+                    try
+                    {
+                        parkingDurationHours = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Entrada incorreta para horas. Digite novamente.");
+                    }
+                }
+
+                decimal totalAmount = initialPrice + (pricePerHour * parkingDurationHours);
+                Console.WriteLine($"Valor total: {totalAmount}");
+
+                vehicles.Remove(plate);
+                Console.WriteLine($"O veículo {plate} foi removido com sucesso.");
+
+                Console.WriteLine("Pressione qualquer tecla para continuar.");
+                Console.ReadKey();
             }
-            catch (FormatException)
+            else
             {
-                Console.WriteLine("Entrada incorreta para horas. Digite novamente.");
+                Console.WriteLine($"Veículo com placa {plate} não encontrado no estacionamento.");
             }
         }
-
-        decimal totalAmount = initialPrice + (pricePerHour * parkingDurationHours);
-        Console.WriteLine($"Valor total: {totalAmount}");
-
-        vehicles.Remove(plate);
-        Console.WriteLine($"O veículo {plate} foi removido com sucesso.");
-
-        Console.WriteLine("Pressione qualquer tecla para continuar.");
-        Console.ReadKey();
-    }
-    else
-    {
-        Console.WriteLine($"Veículo com placa {plate} não encontrado no estacionamento.");
-    }
-}
 
         public void ListVehicles()
         {
